@@ -55,9 +55,12 @@ research-paper-assistant/
 ├── vector_store/
 │   ├── faiss_store.index      # FAISS index file for embeddings
 │   └── metadata.json          # Metadata for each text chunk
-├── retriever.py               # Handles vector-based retrieval
-├── llm_agent.py               # Prompt building and LLM invocation via Groq
-├── arxiv_search.py            # Arxiv search integration
+├── app/
+│   ├── ingestion.py           # Handles vector-based retrieval
+│   └── llm_agent.py           # Prompt building and LLM invocation via Groq
+│   └── arxiv_search.py        # Arxiv search integration                   
+├── Streamlit_ui/
+│   ├──Ui.py                   #Streamlit userinterface
 ├── requirements.txt           # Python dependencies
 └── README.md                  # Project documentation
 ```
